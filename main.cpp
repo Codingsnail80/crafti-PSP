@@ -1,14 +1,27 @@
-#include <libndls.h>
+#include <pspkernel.h>
+#include <pspinit.h>
+#include <pspdisplay.h>
+#include <pspdebug.h>
+#include <pspsdk.h>
+
+
+#include "libndls.h"
 #include <unistd.h>
 
-#include "gl.h"
+
+#include "nGL/gl.h"
 #include "terrain.h"
 #include "worldtask.h"
 
 #include "textures/loading.h"
 
+PSP_MODULE_INFO("Crafti PSP", 0, 1, 0);
+PSP_MAIN_THREAD_ATTR(THREAD_ATTR_USER);
+
 int main(int argc, char *argv[])
 {
+    pspDebugScreenInit();
+    pspDebugScreenPrintf("Started game\n");
     #ifdef _TINSPIRE
         //Sometimes there's a clock on screen, switch that off
         __asm__ volatile("mrs r0, cpsr;"
