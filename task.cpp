@@ -1,7 +1,7 @@
 #include "task.h"
 #include <zlib.h>
 
-#include "texturetools.h"
+#include "nGL/texturetools.h"
 #include "blocklisttask.h"
 #include "worldtask.h"
 #include "settingstask.h"
