@@ -1,9 +1,9 @@
 #ifndef TASK_H
 #define TASK_H
 
-#include "gl.h"
+#include "nGL/gl.h"
 
-#include <libndls.h>
+#include "libndls.h"
 
 class Task
 {
