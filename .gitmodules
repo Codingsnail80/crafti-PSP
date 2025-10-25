@@ -1,8 +1,8 @@
 [submodule "nGL"]
 	path = nGL
 	url = https://github.com/Codingsnail80/nGL-PSP.git
-	branch = main
+	branch = master
 [submodule "SDL-legacy"]
 	path = SDL-legacy
 	url = https://github.com/Codingsnail80/SDL-legacy.git
-	branch = main
+	branch = master
