@@ -1,10 +1,11 @@
+#include <stdint.h>
+
 #ifdef _TINSPIRE
     #include_next <libndls.h>
 #else
     #ifndef LIBNDLS_H
     #define LIBNDLS_H
 
-    #include <stdint.h>
 
     typedef enum {
         SCR_TYPE_INVALID=-1,
