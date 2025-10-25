@@ -6,8 +6,8 @@
 #include <tuple>
 #include <zlib.h>
 
-#include "gl.h"
-#include "gldrawarray.h"
+#include "nGL/gl.h"
+#include "nGL/gldrawarray.h"
 #include "terrain.h"
 #include "aabb.h"
 #include "particle.h"
