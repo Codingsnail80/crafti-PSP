@@ -1,7 +1,7 @@
 #include <cassert>
 #include <cstdlib>
 #include <algorithm>
-#include <libndls.h>
+#include "libndls.h"
 
 #include "world.h"
 #include "chunk.h"
