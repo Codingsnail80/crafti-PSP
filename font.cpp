@@ -1,4 +1,4 @@
-#include "gl.h"
+#include "nGL/gl.h"
 #include "font.h"
 
 #include "textures/font_dat.h"
