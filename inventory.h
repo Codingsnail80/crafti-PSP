@@ -1,7 +1,7 @@
 #ifndef INVENTORY_H
 #define INVENTORY_H
 
-#include "gl.h"
+#include "nGL/gl.h"
 #include "terrain.h"
 
 class Inventory
