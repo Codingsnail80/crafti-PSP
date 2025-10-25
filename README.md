@@ -31,3 +31,13 @@ Limitations
 -----------
 
 crafti doesn't use floats, so there will be some graphical inaccuracies.
+
+
+# How to build:
+run these commands:
+`````
+git clone https://github.com/Codingsnail80/crafti-PSP.git
+cd crafti-PSP.git
+git update submodules --recursive
+
+`````
