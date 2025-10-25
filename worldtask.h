@@ -3,7 +3,7 @@
 
 #include "task.h"
 #include "world.h"
-#include "gl.h"
+#include "nGL/gl.h"
 #include "aabb.h"
 
 class WorldTask : public Task
