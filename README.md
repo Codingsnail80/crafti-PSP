@@ -37,7 +37,29 @@ crafti doesn't use floats, so there will be some graphical inaccuracies.
 run these commands:
 `````
 git clone https://github.com/Codingsnail80/crafti-PSP.git
+
 cd crafti-PSP.git
+
 git submodule update --init --recursive
 
+cd nGL/SDL-legacy
+
+./autogen.sh
+
+LDFLAGS="-L$(psp-config --pspsdk-path)/lib" LIBS="-lc -lpspuser" \
+     ./configure --host psp --prefix=$(psp-config --psp-prefix)
+
+make
+
+make install
+
+cd ..
+
+cd..
+
+psp-cmake .
+
+make
 `````
+
+Once it has compiled it should generate a EBOOT.PBP file that you can run on an emulator or on your firmware modded PSP.
