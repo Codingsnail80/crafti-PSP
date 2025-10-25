@@ -1,6 +1,6 @@
 #include "inventory.h"
 
-#include "texturetools.h"
+#include "nGL/texturetools.h"
 #include "blockrenderer.h"
 
 #include "textures/inventory.h"
