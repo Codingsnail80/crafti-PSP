@@ -1,6 +1,6 @@
 #include "terrain.h"
 
-#include <libndls.h>
+#include "libndls.h"
 
 #include "textures/terrain.h"
 #include "textures/inv_selection.h"
