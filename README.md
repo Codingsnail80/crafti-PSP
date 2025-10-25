@@ -27,13 +27,8 @@ Put a block down with 7 and destroy a block with 9
 Open the menu with menu, move the cursor with 8-2 and select it with 5  
 ESC is a shortcut for "Save & Exit"
 
-Limitations
------------
 
-crafti doesn't use floats, so there will be some graphical inaccuracies.
-
-
-# How to build:
+## How to build:
 First you need to isntall the pspdev library if you haven't already.
 Get it from their downloads page: https://pspdev.github.io/installation.html
 If you don't see your operating system listed then follow their instructions on compiling it for your system. I recomend getting a download if possible though.
@@ -65,3 +60,9 @@ make
 `````
 
 Once it has compiled it should generate a EBOOT.PBP file that you can run on an emulator or on your firmware modded PSP.
+
+## Current state:
+Currently it compiles and runs, but the controls aren't linked yet, and there is a graphics bug I believe is related to aspect ratio.
+I do intend on fixing these issues and I will update the repository once they are patched.
+Also you may notice many of the variable still refer to the ti-nspire. That's just because I didn't want to change every instance of the variable to a new name.
+The variables will still be linked back to psp functions in their definitions, so don't worry about the variable names as much.
