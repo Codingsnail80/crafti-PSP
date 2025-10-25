@@ -1,3 +1,9 @@
+#include <pspkernel.h>
+#include <pspdisplay.h>
+#include <pspdebug.h>
+#include <pspinit.h>
+#include <pspsdk.h>
+
 #include <sys/stat.h>
 
 #include "worldtask.h"
@@ -33,14 +39,14 @@ void WorldTask::crosshairPixel(int x, int y)
 
 void WorldTask::getForward(GLFix *x, GLFix *z)
 {
-    *x = GLFix(fast_sin(yr)) * speed();
-    *z = GLFix(fast_cos(yr)) * speed();
+    *x = GLFix(sin((float)yr)) * speed();
+    *z = GLFix(cos((float)yr)) * speed();
 }
 
 void WorldTask::getRight(GLFix *x, GLFix *z)
 {
-    *x = GLFix(fast_sin((yr + 90).normaliseAngle())) * speed();
-    *z = GLFix(fast_cos((yr + 90).normaliseAngle())) * speed();
+    *x = GLFix(sin((float)(yr + 90).normaliseAngle())) * speed();
+    *z = GLFix(cos((float)(yr + 90).normaliseAngle())) * speed();
 }
 
 GLFix WorldTask::speed()
@@ -219,7 +225,7 @@ void WorldTask::logic()
     //Do test only on every second frame, it's expensive
     if(do_test)
     {
-        GLFix dx = fast_sin(yr)*fast_cos(xr), dy = -fast_sin(xr), dz = fast_cos(yr)*fast_cos(xr);
+        GLFix dx = sin((float)yr)*cos((float)xr), dy = -sin((float)xr), dz = cos((float)yr)*cos((float)xr);
         GLFix dist;
         if(!world.intersectsRay(x, y + eye_pos, z, dx, dy, dz, selection_pos, selection_side, dist, in_water))
             selection_side = AABB::NONE;
