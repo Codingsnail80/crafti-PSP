@@ -3,4 +3,4 @@
 	url = https://github.com/Codingsnail80/nGL-PSP.git
 [submodule "SDL-legacy"]
 	path = SDL-legacy
-	url = https://github.com/pspdev/SDL-legacy.git
+	url = https://github.com/Codingsnail80/SDL-legacy.git
