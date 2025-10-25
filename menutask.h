@@ -1,7 +1,7 @@
 #ifndef MENUTASK_H
 #define MENUTASK_H
 
-#include "gl.h"
+#include "nGL/gl.h"
 
 #include "task.h"
 
