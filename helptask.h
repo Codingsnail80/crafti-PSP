@@ -3,7 +3,7 @@
 
 #include "task.h"
 
-#include "gl.h"
+#include "nGL/gl.h"
 
 class HelpTask : public Task
 {
