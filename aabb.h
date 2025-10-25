@@ -1,7 +1,7 @@
 #ifndef AABB_H
 #define AABB_H
 
-#include "gl.h"
+#include "nGL/gl.h"
 
 class AABB
 {
