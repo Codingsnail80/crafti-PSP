@@ -3,7 +3,7 @@
 
 #include <vector>
 
-#include "gl.h"
+#include "nGL/gl.h"
 
 // THIS CLASS IS A TRANSLATION TO C++11 FROM THE REFERENCE
 // JAVA IMPLEMENTATION OF THE IMPROVED PERLIN FUNCTION (see http://mrl.nyu.edu/~perlin/noise/)
