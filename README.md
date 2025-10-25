@@ -34,6 +34,10 @@ crafti doesn't use floats, so there will be some graphical inaccuracies.
 
 
 # How to build:
+First you need to isntall the pspdev library if you haven't already.
+Get it from their downloads page: https://pspdev.github.io/installation.html
+If you don't see your operating system listed then follow their instructions on compiling it for your system. I recomend getting a download if possible though.
+
 run these commands:
 `````
 git clone https://github.com/Codingsnail80/crafti-PSP.git
@@ -42,7 +46,7 @@ cd crafti-PSP.git
 
 git submodule update --init --recursive
 
-cd nGL/SDL-legacy
+cd SDL-legacy
 
 ./autogen.sh
 
@@ -52,8 +56,6 @@ LDFLAGS="-L$(psp-config --pspsdk-path)/lib" LIBS="-lc -lpspuser" \
 make
 
 make install
-
-cd ..
 
 cd..
 
