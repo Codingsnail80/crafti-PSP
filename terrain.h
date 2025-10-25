@@ -3,7 +3,7 @@
 
 #include <cstdint>
 
-#include "texturetools.h"
+#include "nGl/texturetools.h"
 
 #define BLOCK_SIZE 128
 
