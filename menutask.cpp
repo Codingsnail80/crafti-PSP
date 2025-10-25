@@ -1,6 +1,6 @@
 #include "menutask.h"
 
-#include "texturetools.h"
+#include "nGL/texturetools.h"
 #include "worldtask.h"
 #include "helptask.h"
 #include "settingstask.h"
