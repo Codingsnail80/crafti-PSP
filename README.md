@@ -38,6 +38,6 @@ run these commands:
 `````
 git clone https://github.com/Codingsnail80/crafti-PSP.git
 cd crafti-PSP.git
-git update submodules --recursive
+git submodule update --init --recursive
 
 `````
