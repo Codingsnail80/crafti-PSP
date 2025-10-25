@@ -1,7 +1,7 @@
 #include "settingstask.h"
 
 #include "font.h"
-#include "texturetools.h"
+#include "nGL/texturetools.h"
 #include "worldtask.h"
 
 #include "textures/selection.h"
