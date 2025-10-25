@@ -59,7 +59,7 @@ psp-cmake .
 make
 `````
 
-Once it has compiled it should generate a EBOOT.PBP file that you can run on an emulator or on your firmware modded PSP.
+Once it has compiled it should generate a EBOOT.PBP file that you can run on an emulator. It can run on an actual psp however the home button isn't set up yet so you will not be able to quit the game and will have to do a force shutdown.
 
 ## Current state:
 Currently it compiles and runs, but the controls aren't linked yet, and there is a graphics bug I believe is related to aspect ratio.
