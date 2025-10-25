@@ -1,9 +1,6 @@
 crafti ported to the PSP
 ======
 
-3D Minecraft for TI Nspire CX calcs running Ndless  
-Thread on omnimaga: http://www.omnimaga.org/ti-nspire-projects/ngl-a-fast-(enough)-3d-engine-for-the-nspire/
-
 Screenshots
 -----------
 
