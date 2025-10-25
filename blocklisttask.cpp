@@ -6,7 +6,7 @@
 #include "font.h"
 #include "inventory.h"
 #include "terrain.h"
-#include "texturetools.h"
+#include "nGL/texturetools.h"
 #include "worldtask.h"
 
 BlockListTask block_list_task;
